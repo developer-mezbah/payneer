@@ -22,12 +22,12 @@
 </head>
 
 <body>
-    <nav class="h-[10vh] bg-[#FFFFFF] w-full shadow-lg shadow-indigo-500/40 fixed">
-        <div class="w-[80%] mx-auto flex justify-between items-center h-full">
-            <div>
+    <nav class="lg:h-[10vh] bg-[#FFFFFF] w-full shadow-lg shadow-indigo-500/40 fixed py-3 lg:py-0">
+        <div class="container mx-auto flex justify-between items-center h-full flex-wrap gap-2 md:gap-0">
+            <div class="mx-auto lg:mx-0">
                 <img class="w-[200px] overflow-hidden" src="images/Logo.svg" alt="">
             </div>
-            <ul class="flex gap-8 text-lg text-[#252526] font-medium">
+            <ul class="flex md:gap-8 gap-2 text-lg text-[#252526] font-medium mx-auto lg:m-0 flex-wrap pl-2 lg:pl-0 mt-3 lg:mt-0">
                 <li>
                     <a href="#">
                         Freelancer <span class="text-sm text-gray-500 ml-1"><i
@@ -51,68 +51,58 @@
                         Sing In
                     </a>
                 </li>
-                <li>
+                <li class="header-btn text-white pl-6 rounded-full pb-1 lg:pr-0 pr-3">
                     <a href="#">
-                        Register <span class="text-md text-gray-500 ml-1"><i class="fa-solid fa-arrow-right"></i></span>
+                        Register <span class="text-md text-gray-500 ml-1 md:inline hidden"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
     <header class="">
-        <div class="h-[100vh] w-full bg-cover bg-no-repeat bg-center bg-blend-multiply bg-[#D05AA2] pt-[10vh] blur-sm relative  bg-fixed"
+        <div class="h-[100vh] w-full bg-cover bg-no-repeat bg-center bg-blend-multiply bg-[#D05AA2] lg:pt-[20vh] blur-sm relative bg-fixed"
             style="background-image: url(images/header-bg.jpg);">
         </div>
         <div
-            class="text-white w-[50%] h-full flex justify-center flex-col mx-auto gap-8 absolute top-0 left-0 bottom-0 right-0 text-center">
-            <h1 class="text-6xl text-white">Business payments for today’s global economy</h1>
-            <p class="text-[#fff] font-thin text-2xl">The Payoneer multi-currency account has everything your business
+            class="text-white w-[90%] lg:w-[50%] h-full flex justify-center flex-col mx-auto gap-8 absolute top-0 left-0 bottom-0 right-0 text-center z-10">
+            <h1 class="text-4xl md:text-6xl text-white">Business payments for today’s global economy</h1>
+            <p class="text-[#fff] font-thin text-xl md:text-2xl">The Payoneer multi-currency account has everything your business
                 needs to pay, get paid, and grow globally.</p>
             <button
                 class="header-btn w-[200px] mx-auto p-3 rounded-full hover:bg-gradient-to-l duration-300 text-[#fff]">Open
                 your accound</button>
         </div>
 
-        <img class="absolute top-[50%] left-[10%] w-[100px]" src="images/butterfly.gif" alt="">
-        <img class="absolute top-[10vh] right-0 w-[200px]" src="images/sun.gif" alt="">
+        <img class="absolute top-[50%] left-[10%] w-[100px] z-0" src="images/butterfly.gif" alt="">
+        <img class="absolute top-[10vh] right-0 w-[200px] z-0" src="images/sun.gif" alt="">
     </header>
 
-    <!-- <section class="h-[100vh] w-full py-10">
-        <div class="container mx-auto">
-            <div class="text-center">
-                <h1 class="text-4xl">Who are our customers?</h1>
-                <hr class="w-[80px] header-btn h-[5px] mx-auto mt-3">
-            </div>
-            <div>
-                <video play loop muted src="https://www.payoneer.com/wp-content/uploads/freelancer-video.mp4" playsinline></video>
-            </div>
-        </div>
-    </section> -->
-    <section class="w-3/4 mx-auto mt-16"> 
-        <div class="grid grid-cols-3 gap-6">
-           <div class="bg-blue-600 text-white p-8 text-center rounded-lg">
-            <h3 class="text-3xl">Deposit</h3>
-            <h4 class="text-5xl font-medium">$ <span id="Deposit-total">000</span></h4>
-           </div>
-           <div class="bg-yellow-500 text-white p-8 text-center rounded-lg">
-            <h3 class="text-3xl">Withdraw</h3>
-            <h4 class="text-5xl font-medium">$ <span id="Withdraw-total">000</span></h4>
-           </div>
-           <div class="bg-green-600 text-white p-8 text-center rounded-lg">
-            <h3 class="text-3xl">Balance</h3>
-            <h4 class="text-5xl font-medium">$ <span id="Balance-total">000</span></h4>
-           </div>
-        </div>
-        <div class="grid grid-cols-2 gap-6 mt-6">
 
-            <div class="bg-lime-600 text-white p-8 rounded-lg space-y-4">
+    <section class="container mx-auto mt-16"> 
+        <div class="grid md:grid-cols-3 lg:gap-6 gap-4">
+           <div class="bg-blue-600 text-white p-3 mx-2 md:p-8 text-center rounded-lg">
+            <h3 class="text-xl md:text-3xl">Deposit</h3>
+            <h4 class="text-2xl md:text-5xl font-medium">$ <span id="Deposit-total">000</span></h4>
+           </div>
+           <div class="bg-yellow-500 text-white p-3 mx-2 md:p-8 text-center rounded-lg">
+            <h3 class="text-xl md:text-3xl">Withdraw</h3>
+            <h4 class="text-2xl md:text-5xl font-medium">$ <span id="Withdraw-total">000</span></h4>
+           </div>
+           <div class="bg-green-600 text-white p-3 mx-2 md:p-8 text-center rounded-lg">
+            <h3 class="text-xl md:text-3xl">Balance</h3>
+            <h4 class="text-2xl md:text-5xl font-medium">$ <span id="Balance-total">000</span></h4>
+           </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5 lg:gap-6 lg:mt-6 mt-12">
+
+            <div class="bg-lime-600 text-white p-3 lg:p-8 rounded-lg space-y-4">
                 <h3 class="text-3xl "> Please Deposit Your Amount</h3>
-                <input id="Deposit-input" class="w-3/4 h-8 rounded mx-auto text-black p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Deposit Amount">
+                <input id="Deposit-input" class="w-full lg:w-3/4 h-8 rounded mx-auto text-black py-5 px-2 lg:p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Deposit Amount">
                 <button id="Deposit-button" class="text-white bg-blue-800 rounded font-medium px-3 py-2 block"> Deposit</button>
             </div>
-            <div class="bg-red-400 text-white p-8 rounded-lg space-y-4">
+            <div class="bg-red-400 text-white p-3 lg:p-8 rounded-lg space-y-4">
                 <h3 class="text-3xl "> Please Withdraw Your Amount</h3>
-                <input id="Withdraw-input" class="w-3/4 h-8 rounded mx-auto text-black p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Withdraw Amount">
+                <input id="Withdraw-input" class="w-full lg:w-3/4 h-8 rounded mx-auto text-black py-5 px-2 lg:p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Withdraw Amount">
                 <button id="Withdraw-button" class="text-white bg-fuchsia-800 rounded font-medium px-3 py-2 block ">Withdraw</button>
             </div>
 
