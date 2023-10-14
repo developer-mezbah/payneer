@@ -1,0 +1,11 @@
+nav{
+    z-index: 999;
+}
+.header-btn{
+    background: linear-gradient(to right, #8765DB, #2571E0, #8765DB);
+}
+.header-bg{
+    background: linear-gradient(to left top, #D258A1, #F14C41, #FC480A, #F76F01, #E8AE01, #DCD904, #ADCC2F);
+    opacity: 0.9;
+    z-index: -1;
+}

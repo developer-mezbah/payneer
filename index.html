@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/04dbeda3fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="h-[10vh] bg-[#FFFFFF] w-full shadow-lg shadow-indigo-500/40 fixed">
+        <div class="w-[80%] mx-auto flex justify-between items-center h-full">
+            <div>
+                <img class="w-[200px] overflow-hidden" src="images/Logo.svg" alt="">
+            </div>
+            <ul class="flex gap-8 text-lg text-[#252526] font-medium">
+                <li>
+                    <a href="#">
+                        Freelancer <span class="text-sm text-gray-500 ml-1"><i
+                                class="fa-solid fa-less-than -rotate-90"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Business
+                        <span class="text-sm text-gray-500 ml-1"><i class="fa-solid fa-less-than -rotate-90"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Marketplace <span class="text-sm text-gray-500 ml-1"><i
+                                class="fa-solid fa-less-than -rotate-90"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Sing In
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Register <span class="text-md text-gray-500 ml-1"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="">
+        <div class="h-[100vh] w-full bg-cover bg-no-repeat bg-center bg-blend-multiply bg-[#D05AA2] pt-[10vh] blur-sm relative  bg-fixed"
+            style="background-image: url(images/header-bg.jpg);">
+        </div>
+        <div
+            class="text-white w-[50%] h-full flex justify-center flex-col mx-auto gap-8 absolute top-0 left-0 bottom-0 right-0 text-center">
+            <h1 class="text-6xl text-white">Business payments for today’s global economy</h1>
+            <p class="text-[#fff] font-thin text-2xl">The Payoneer multi-currency account has everything your business
+                needs to pay, get paid, and grow globally.</p>
+            <button
+                class="header-btn w-[200px] mx-auto p-3 rounded-full hover:bg-gradient-to-l duration-300 text-[#fff]">Open
+                your accound</button>
+        </div>
+
+        <img class="absolute top-[50%] left-[10%] w-[100px]" src="images/butterfly.gif" alt="">
+        <img class="absolute top-[10vh] right-0 w-[200px]" src="images/sun.gif" alt="">
+    </header>
+
+    <!-- <section class="h-[100vh] w-full py-10">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl">Who are our customers?</h1>
+                <hr class="w-[80px] header-btn h-[5px] mx-auto mt-3">
+            </div>
+            <div>
+                <video play loop muted src="https://www.payoneer.com/wp-content/uploads/freelancer-video.mp4" playsinline></video>
+            </div>
+        </div>
+    </section> -->
+    <section class="w-3/4 mx-auto mt-16"> 
+        <div class="grid grid-cols-3 gap-6">
+           <div class="bg-blue-600 text-white p-8 text-center rounded-lg">
+            <h3 class="text-3xl">Deposit</h3>
+            <h4 class="text-5xl font-medium">$ <span id="Deposit-total">000</span></h4>
+           </div>
+           <div class="bg-yellow-500 text-white p-8 text-center rounded-lg">
+            <h3 class="text-3xl">Withdraw</h3>
+            <h4 class="text-5xl font-medium">$ <span id="Withdraw-total">000</span></h4>
+           </div>
+           <div class="bg-green-600 text-white p-8 text-center rounded-lg">
+            <h3 class="text-3xl">Balance</h3>
+            <h4 class="text-5xl font-medium">$ <span id="Balance-total">000</span></h4>
+           </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mt-6">
+
+            <div class="bg-lime-600 text-white p-8 rounded-lg space-y-4">
+                <h3 class="text-3xl "> Please Deposit Your Amount</h3>
+                <input id="Deposit-input" class="w-3/4 h-8 rounded mx-auto text-black p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Deposit Amount">
+                <button id="Deposit-button" class="text-white bg-blue-800 rounded font-medium px-3 py-2 block"> Deposit</button>
+            </div>
+            <div class="bg-red-400 text-white p-8 rounded-lg space-y-4">
+                <h3 class="text-3xl "> Please Withdraw Your Amount</h3>
+                <input id="Withdraw-input" class="w-3/4 h-8 rounded mx-auto text-black p-6 outline-none border-2 focus:border-red-500" type="number" placeholder="please Give Withdraw Amount">
+                <button id="Withdraw-button" class="text-white bg-fuchsia-800 rounded font-medium px-3 py-2 block ">Withdraw</button>
+            </div>
+
+        </div>
+   
+    </section>
+    <footer class="container mx-auto mt-10">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 p-2 mt-2 pb-10 justify-center m-auto items-center ml-10 sm:ml-0">
+            <div data-aos="fade-right" class="aos-init aos-animate">
+                <!-- <h2 class="text-red-500 text-3xl">Dharia</h2> -->
+                <img class="w-[180px]" src="images/Logo.svg" alt="">
+                <h4 class="mt-10 dark:text-sky-400 text-red-700 hover:underline duration-300 text-lg">My social link
+                </h4>
+                <ul class="flex gap-3 py-5">
+                    <li class="text-4xl text-[#000] bg-white rounded-full hover:text-red-500 duration-300"><a
+                            href="https://github.com/developer-mezbah"><svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                </path>
+                            </svg></a></li>
+                    <li class="text-4xl text-[#087AEA] hover:text-red-500 duration-300"><a
+                            href="https://www.facebook.com/mezbah.uddin.99"><svg stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Facebook">
+                                    <path
+                                        d="M19.02,4.975A9.93,9.93,0,0,0,2.07,12,9.935,9.935,0,0,0,12,21.935a9.98,9.98,0,0,0,3.8-.75,10.189,10.189,0,0,0,3.22-2.16,9.934,9.934,0,0,0,0-14.05Zm-.7,13.34A8.921,8.921,0,0,1,13,20.885v-6.56h1.88a1,1,0,0,0,0-2H13V9.585a1,1,0,0,1,1-1h1.2a1,1,0,0,0,0-2H13.5a2.5,2.5,0,0,0-2.5,2.5v3.24H9.13a1,1,0,1,0,0,2H11v6.56a8.919,8.919,0,1,1,9.26-5.47A9.061,9.061,0,0,1,18.32,18.315Z">
+                                    </path>
+                                </g>
+                            </svg></a></li>
+                    <li class="text-4xl text-[#fff] bg-[#087AEA] rounded hover:text-red-500 duration-300"><a
+                            href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z">
+                                </path>
+                            </svg></a></li>
+                    <li class="text-4xl text-[#32E6E2] hover:text-red-500 duration-300"><a
+                            href="https://app.netlify.com/teams/mezbah-99/overview"><svg stroke="currentColor"
+                                fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <title></title>
+                                <path
+                                    d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z">
+                                </path>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div data-aos="fade-down-right" class="aos-init aos-animate">
+                <h4 class="mt-10 dark:text-sky-400 text-red-700 hover:underline duration-300 text-lg">My Experience is:-
+                </h4>
+                <ul class="ml-3 font-semibold">
+                    <li class="hover:ml-3 duration-300">HTML</li>
+                    <li class="hover:ml-3 duration-300">CSS</li>
+                    <li class="hover:ml-3 duration-300">JAVASCRIPT</li>
+                    <li class="hover:ml-3 duration-300">REACT</li>
+                    <li class="hover:ml-3 duration-300">STATE MANAGEMENT REDUX</li>
+                    <li class="hover:ml-3 duration-300">NODE.JS</li>
+                    <li class="hover:ml-3 duration-300">MONGODB</li>
+                </ul>
+            </div>
+            <div data-aos="fade-down-left" class="aos-init aos-animate">
+                <h4 class="mt-10 dark:text-sky-400 text-red-700 hover:underline duration-300 text-lg">My personal
+                    information:-</h4>
+                <ul class="ml-3 font-semibold">
+                    <li class="hover:ml-3 duration-300">I'm Mezbah uddin</li>
+                    <li class="hover:ml-3 duration-300">I'm a cse student</li>
+                    <li class="hover:ml-3 duration-300">The collage name of ccn polytecnic institute</li>
+                    <li class="hover:ml-3 duration-300">I am from bangladesh</li>
+                    <li class="hover:ml-3 duration-300">This is my first project</li>
+                    <li class="hover:ml-3 duration-300">I am a full stack web development</li>
+                    <li class="hover:ml-3 duration-300">My Experience is 2 years</li>
+                </ul>
+            </div>
+            <div data-aos="fade-left" class="aos-init aos-animate">
+                <h4 class="mt-10 dark:text-sky-400 text-red-700 hover:underline duration-300 text-lg">The following
+                    equipments have been used for this project:-</h4>
+                <li class="hover:ml-3 duration-300">React</li>
+                <li class="hover:ml-3 duration-300">node</li>
+                <li class="hover:ml-3 duration-300">Mongodb</li>
+                <li class="hover:ml-3 duration-300">npm multer</li>
+                <li class="hover:ml-3 duration-300">express</li>
+                <li class="hover:ml-3 duration-300">react-router-dom</li>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
